@@ -30,6 +30,9 @@ public class TheFirstWindowViewActivity extends AppCompatActivity implements Fir
     ImageButton camera;
     FirstWindowPresenterInterface firstWindowPresenter;
 
+    private final int PHOTO = 1;
+    private final int GALLERY = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,10 +48,10 @@ public class TheFirstWindowViewActivity extends AppCompatActivity implements Fir
                 switch (v.getId()) {
 
                     case R.id.ib_gallery:
-                        firstWindowPresenter.clickingOnAPaperClip(0);
+                        firstWindowPresenter.clickingOnAPaperClip(GALLERY);
                         break;
                     case R.id.ib_camera:
-                        firstWindowPresenter.clickingOnAPaperClip(1);
+                        firstWindowPresenter.clickingOnAPaperClip(PHOTO);
                         break;
                 }
             }

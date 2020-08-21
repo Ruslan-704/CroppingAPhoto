@@ -15,8 +15,8 @@ public class FirstWindowPresenter implements FirstWindowPresenterInterface{
     private FirstWindowViewInterface theFirstWindowActivity;
     private Uri imageUri1;
 
-    private final int PHOTO = 1;
-    private final int GALLERY = 200;
+    public final int PHOTO = 1;
+    public final int GALLERY = 200;
 
 
     public FirstWindowPresenter(FirstWindowViewInterface theFirstWindowActivity)
@@ -35,7 +35,7 @@ public class FirstWindowPresenter implements FirstWindowPresenterInterface{
         if(numberButton == 0) {
             Intent gallery = new Intent(Intent.ACTION_PICK,
                     android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            theFirstWindowActivity.startIntent(gallery , GALLERY);
+            theFirstWindowActivity.startIntent(gallery , 200);
         }
 
         if(numberButton == 1){

@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Toolbar" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#48D1CC	</item>
+        <item name="colorPrimaryDark">#48D1CC	</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
 </resources>
